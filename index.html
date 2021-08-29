@@ -15,20 +15,39 @@
         <h2 class="text-center">Sports</h2>
         <!-- input field -->
         <div class="input-group mb-3 w-50 mx-auto">
-            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+            <input id="input-field" type="text" class="form-control" placeholder="search by team name" aria-label="Recipient's username"
                 aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+            <button item id="input-btn" class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
         </div>
-        <!-- cards groups -->
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+        <!-- spinner -->
+        <div class="d-flex justify-content-center mt-5 d-none" id="spinner">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+          <!-- spinner end -->
+
+
+        <!-- erro message for input field -->
+        <div id="input-error" class="text-center text-info d-none">
+            <div class="card text-dark bg-warning mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
                 <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title">Warning card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
+
+        </div>
+        <!-- single cards details  -->
+        <div id="single-card">
+            
+        </div>
+
+        <!-- cards groups -->
+        <div id="cardsId" class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+               
             </div>
         </div>
 
